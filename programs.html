@@ -1,0 +1,213 @@
+<!DOCTYPE html> <!-- Defines the document type and HTML version -->
+<html lang="en"> <!-- Starts the HTML document and sets the language to English -->
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper rendering and touch zooming on mobile devices -->
+    <title>Programs - Al Sadiq Islamic English School</title> <!-- Sets the title of the web page -->
+
+    <link rel="stylesheet" href="style2.css"> <!-- this code Links to an external CSS file -->
+
+    <style>
+        .accordion-toggle { /* Styles the accordion buttons */
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .accordion-toggle:hover { /* Changes background on hover */
+            background-color: #e0e0e0;
+        }
+
+        .accordion-content { /* Styles for hidden content panels */
+            display: none;
+            padding: 10px 20px;
+            border-top: 1px solid #ccc;
+        }
+
+        .program-image { /* Styles for image container */
+            margin-bottom: 15px;
+        }
+
+        .program-image img { /* Styles the images in program sections */
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .scroll-top { /* Styles the scroll-to-top button */
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 999;
+        }
+
+        @media (max-width: 600px) { /* Responsive styling for smaller screens */
+            .program-content, .program-details {
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container"> <!-- Container for logo and navigation -->
+            <div class="logo"> <!-- Logo container -->
+                <div class="logo-img">AS</div> <!-- Placeholder for logo image or initials -->
+                <h1>Al Sadiq Islamic English School</h1> <!-- School name -->
+            </div>
+            <nav> <!-- Navigation menu -->
+                <ul>
+                    <li><a href="index.html">Home</a></li> <!-- Navigation link to Home -->
+                    <li><a href="aboutus.html">About Us</a></li> <!-- Navigation link to About Us -->
+                    <li><a href="programs.html">Programs</a></li> <!-- Navigation link to Programs -->
+                    <li><a href="testimonials.html">Testimonials</a></li> <!-- Navigation link to Testimonials -->
+                    <li><a href="contact.html">Contact</a></li> <!-- Navigation link to Contact -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1 class="page-title">Our Academic Programs</h1> <!-- Page main heading -->
+        <p class="page-description">Al Sadiq Islamic English School offers comprehensive education programs that combine academic excellence with Islamic values.</p>
+
+        <!-- Elementary School Program -->
+        <div class="program-card">
+            <button class="accordion-toggle">Elementary School (Grades 1-5)</button> <!-- Accordion toggle button -->
+            <div class="accordion-content"> <!-- Hidden content for elementary school -->
+                <div class="program-image">
+                    <img src="elementry.jpeg" alt="Elementary School"> <!-- Image for Elementary School -->
+                </div>
+                <p>Our Elementary School program builds a strong foundation in core academic subjects while nurturing Islamic character and values in our youngest students.</p> <!-- Description -->
+                <div class="program-details">
+                    <h3>Curriculum Highlights:</h3>
+                    <ul> <!-- List of subjects taught -->
+                        <li>English Language Arts</li>
+                        <li>Mathematics</li>
+                        <li>Science</li>
+                        <li>Social Studies</li>
+                        <li>Arabic Language</li>
+                        <li>Islamic Studies</li>
+                        <li>Physical Education</li>
+                        <li>Art & Music</li>
+                    </ul>
+                    <p>Our nurturing teachers create a supportive learning environment.</p> <!-- Additional info -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Middle School Program -->
+        <div class="program-card">
+            <button class="accordion-toggle">Middle School (Grades 6-8)</button> <!-- Accordion button -->
+            <div class="accordion-content"> <!-- Hidden content for middle school -->
+                <div class="program-image">
+                    <img src="middle school 2.png" alt="Middle School"> <!-- Middle School image -->
+                </div>
+                <p>The Middle School program helps students transition toward more advanced academics while continuing to strengthen their Islamic identity and character development.</p>
+                <div class="program-details">
+                    <h3>Curriculum Highlights:</h3>
+                    <ul>
+                        <li>Advanced English Literature & Composition</li>
+                        <li>Pre-Algebra & Algebra</li>
+                        <li>Life & Physical Sciences</li>
+                        <li>World History & Geography</li>
+                        <li>Arabic Language & Literature</li>
+                        <li>Islamic Studies & Quran</li>
+                        <li>Technology & Computer Science</li>
+                        <li>Physical Education & Health</li>
+                    </ul>
+                    <p>Students engage in more project-based learning.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- High School Program -->
+        <div class="program-card">
+            <button class="accordion-toggle">High School (Grades 9-12)</button> <!-- Accordion button -->
+            <div class="accordion-content"> <!-- Hidden content for high school -->
+                <div class="program-image">
+                    <img src="high school 2.png" alt="High School"> <!-- High School image -->
+                </div>
+                <p>Our High School program prepares students for university and beyond with rigorous academics and continued emphasis on Islamic principles and values.</p>
+                <div class="program-details">
+                    <h3>Curriculum Highlights:</h3>
+                    <ul>
+                        <li>Advanced English & World Literature</li>
+                        <li>Advanced Mathematics...</li>
+                        <li>Biology, Chemistry, Physics</li>
+                        <li>World History, Economics, Government</li>
+                        <li>Advanced Arabic</li>
+                        <li>Advanced Islamic Studies</li>
+                        <li>Computer Science & Technology</li>
+                        <li>College Preparation & Counseling</li>
+                    </ul>
+                    <p>Our high school curriculum meets and exceeds.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Islamic Studies Section -->
+        <div class="islamic-studies">
+            <h2>Islamic Studies Program</h2> <!-- Section heading -->
+            <div class="program-image">
+                <img src="islamic Studies.jpg" alt="Islamic Studies"> <!-- Islamic Studies image -->
+            </div>
+            <p>At the core of all academic levels is our comprehensive Islamic Studies program, which is integrated throughout the curriculum. Students learn:</p>
+            <ul>
+                <li>Quran recitation, memorization, and interpretation</li>
+                <li>Islamic history and civilization</li>
+                <li>Islamic ethics and character development</li>
+                <li>Islamic jurisprudence appropriate for each age level</li>
+                <li>Arabic language to enhance understanding.</li>
+            </ul>
+            <p>Our Islamic Studies program is designed to help students.</p>
+        </div>
+
+        <a href="index.html" class="back-button">Back to Home</a> <!-- Back button -->
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTopBtn">&#8679;</div> <!-- Scroll-to-top button -->
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Al Sadiq Islamic English School. All Rights Reserved.</p> <!-- Footer content -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script2.js"></script> <!-- External JS file (optional, not shown here) -->
+    <script>
+        // Accordion Functionality
+        const toggles = document.querySelectorAll(".accordion-toggle"); // Select all toggle buttons
+        toggles.forEach(toggle => {
+            toggle.addEventListener("click", () => { // Add click event to each
+                const content = toggle.nextElementSibling; // Get the next sibling (content)
+                content.style.display = content.style.display === "block" ? "none" : "block"; // Toggle visibility
+            });
+        });
+
+        // Scroll to Top Functionality
+        const scrollBtn = document.getElementById("scrollTopBtn"); // Get scroll-to-top button
+        window.addEventListener("scroll", () => { // Add scroll event
+            scrollBtn.style.display = window.scrollY > 300 ? "block" : "none"; // Show button if scrolled down
+        });
+        scrollBtn.addEventListener("click", () => { // Add click event to scroll button
+            window.scrollTo({ top: 0, behavior: "smooth" }); // Smooth scroll to top
+        });
+    </script> <!-- end of script-->
+</body> <!-- end of body-->
+</html> <!-- closing html tag-->

@@ -1,0 +1,213 @@
+<!DOCTYPE html> <!-- Declares the document type and version of HTML -->
+<html lang="en"> <!-- Sets the language of the webpage to English -->
+<head> 
+    <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper rendering on mobile devices -->
+    <title>Contact Us - Al Sadiq Islamic English School</title> <!-- Sets the title of the page -->
+    <link rel="stylesheet" href="style4.css"> <!-- Links to an external CSS file for styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Links to Font Awesome icons library -->
+</head>
+<body> <!-- begins the body of html document-->
+    <header> <!-- Header section -->
+        <div class="container"> <!-- Container for header content -->
+            <div class="logo"> <!-- Logo section -->
+                <img src="ASIES logo.png" alt="School Logo"> <!-- School logo image -->
+                <h1>Al Sadiq Islamic English School</h1> <!-- School name heading -->
+            </div>
+            <nav> <!-- Navigation menu -->
+                <ul> <!-- Unordered list of navigation links -->
+                    <li><a href="index.html">Home</a></li> <!-- Home page link -->
+                    <li><a href="aboutus.html">About Us</a></li> <!-- About Us page link -->
+                    <li><a href="programs.html">Programs</a></li> <!-- Programs page link -->
+                    <li><a href="testimonials.html">Testimonials</a></li> <!-- Testimonials page link -->
+                    <li><a href="contact.html">Contact</a></li> <!-- Contact page link -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main> <!-- Main content section -->
+        <div class="container"> <!-- Container for the contact section -->
+            <section class="contact-section"> <!-- Contact section -->
+                <h2>Contact Us</h2> <!-- Heading for contact section -->
+                <p>We're here to help with any inquiries you might have about our school. Please feel free to reach out through any of the channels below.</p> <!-- Introductory paragraph -->
+
+                <div class="contact-grid"> <!-- Grid layout for contact info and form -->
+                    <section class="contact-info"> <!-- Contact information section -->
+                        <h3>School Information</h3> <!-- Subheading for school info -->
+                        <address> <!-- Address block for contact details -->
+                            <div class="info-item"> <!-- Item for address -->
+                                <span class="info-icon"><i class="fas fa-map-marker-alt"></i></span> <!-- Map marker icon -->
+                                <span>Behind Al Tawar Center - 5th St - Al Qusais - Al Qusais 2 - Dubai</span> <!-- School address -->
+                            </div>
+                            <div class="info-item"> <!-- Item for phone -->
+                                <span class="info-icon"><i class="fas fa-phone-alt"></i></span> <!-- Phone icon -->
+                                <span><a href="tel: 04 263 4083"> 04 263 4083</a></span> <!-- Phone number link -->
+                            </div>
+                            <div class="info-item"> <!-- Item for email -->
+                                <span class="info-icon"><i class="fas fa-envelope"></i></span> <!-- Envelope icon -->
+                                <span><a href="mailto:info@alsadiqschool.com">info@alsadiqschool.com</a></span> <!-- Email link -->
+                            </div>
+                            <div class="info-item"> <!-- Item for office hours -->
+                                <span class="info-icon"><i class="fas fa-clock"></i></span> <!-- Clock icon -->
+                                <span>Office Hours: Monday to Friday, 7:30 AM – 2:00 PM</span> <!-- Office hours -->
+                            </div>
+                            <div class="info-item"> <!-- Item for weekend -->
+                                <span class="info-icon"><i class="fas fa-calendar-alt"></i></span> <!-- Calendar icon -->
+                                <span>Weekend:Saturday and Sunday</span> <!-- Weekend information -->
+                            </div>
+                        </address>
+
+                        <h3 style="margin-top: 30px;">Follow Us</h3> <!-- Social media heading -->
+                        <div class="social-links"> <!-- Social media icon links -->
+                            <a href="https://www.facebook.com/alsadiqschooldubai/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a> <!-- Facebook -->
+                            <a href="https://x.com/AlSadiqSocial/status/1313921325568872453" aria-label="Twitter"><i class="fab fa-twitter"></i></a> <!-- Twitter -->
+                            <a href="https://www.instagram.com/alsadiqschool/?hl=en" aria-label="Instagram"><i class="fab fa-instagram"></i></a> <!-- Instagram -->
+                            <a href="https://www.linkedin.com/company/al-sadiq-islamic-english-school/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a> <!-- LinkedIn -->
+                            <a href="https://www.youtube.com/channel/UCQvsIFqf5WhbOv-Kvin9gDw" aria-label="YouTube"><i class="fab fa-youtube"></i></a> <!-- YouTube -->
+                        </div>
+                    </section>
+
+                    <section class="contact-form"> <!-- Contact form section -->
+                        <h3>Send Us a Message</h3> <!-- Form heading -->
+                        <form id="contactForm"> <!-- Contact form -->
+                            <div class="form-row"> <!-- Row for name and email -->
+                                <div>
+                                    <label for="name">Full Name <span aria-hidden="true">*</span></label> <!-- Label for full name -->
+                                    <input type="text" id="name" name="name" required placeholder="Enter your full name"> <!-- Name input -->
+                                </div>
+                                <div>
+                                    <label for="email">Email Address <span aria-hidden="true">*</span></label> <!-- Label for email -->
+                                    <input type="email" id="email" name="email" required placeholder="example@email.com"> <!-- Email input -->
+                                </div>
+                            </div>
+
+                            <div class="form-row"> <!-- Row for phone and inquiry type -->
+                                <div>
+                                    <label for="phone">Phone Number</label> <!-- Label for phone -->
+                                    <input type="tel" id="phone" name="phone" placeholder="+971 XX XXX XXXX"> <!-- Phone input -->
+                                </div>
+                                <div>
+                                    <label for="inquiryType">Inquiry Type <span aria-hidden="true">*</span></label> <!-- Label for inquiry type -->
+                                    <select id="inquiryType" name="inquiryType" required> <!-- Dropdown for inquiry type -->
+                                        <option value="" disabled selected>Select inquiry type</option> <!-- Default option -->
+                                        <option value="general">General Information</option> <!-- General info option -->
+                                        <option value="admissions">Admissions</option> <!-- Admissions option -->
+                                        <option value="academics">Academics</option> <!-- Academics option -->
+                                        <option value="facilities">Facilities</option> <!-- Facilities option -->
+                                        <option value="employment">Employment</option> <!-- Employment option -->
+                                        <option value="other">Other</option> <!-- Other option -->
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div> <!-- Subject input -->
+                                <label for="subject">Subject <span aria-hidden="true">*</span></label>
+                                <input type="text" id="subject" name="subject" required placeholder="Brief subject of your message">
+                            </div>
+
+                            <div> <!-- Message input -->
+                                <label for="message">Message <span aria-hidden="true">*</span></label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Please provide detailed information about your inquiry..."></textarea>
+                            </div>
+
+                            <div> <!-- Attachment input -->
+                                <label for="attachment">Attachment (Optional)</label>
+                                <input type="file" id="attachment" name="attachment">
+                                <small>Max file size: 5MB (PDF, DOC, JPG)</small>
+                            </div>
+
+                            <div class="form-actions"> <!-- Form action buttons -->
+                                <button type="submit" id="submitBtn"> <!-- Submit button -->
+                                    <span>Send Message</span>
+                                    <div class="loading" id="loadingIndicator"></div> <!-- Loading indicator -->
+                                </button>
+                                <button type="reset">Clear Form</button> <!-- Reset button -->
+                            </div>
+
+                            <div id="formSuccess">Message submitted successfully! We'll get back to you soon.</div> <!-- Success message -->
+                            <div id="formError">An error occurred. Please try again or contact us directly.</div> <!-- Error message -->
+                        </form>
+                    </section>
+                </div>
+
+                <section class="map"> <!-- Map section -->
+                    <h3>School Location Map</h3> <!-- Map heading -->
+                    <div class="map-container"> <!-- Google Maps iframe container -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.8600000000001!2d55.296249999999995!3d25.2769875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f427c1c1a1a5b%3A0x5e6b6e0c28a7b2b5!2sDubai!5e0!3m2!1sen!2sae!4v1685593267380!5m2!1sen!2sae" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Google Maps - Al Sadiq School Location">
+                        </iframe>
+                    </div>
+                    <div style="margin-top: 15px;"> <!-- Transportation info -->
+                        <h4 style="margin-bottom: 10px;">Transportation</h4>
+                        <p>School transportation is available for students in most areas of Dubai. For information about bus routes and schedules, please contact our transportation department at <a href="tel:+971-4-2634083">+971-4-2634083</a> or email <a href="mailto: transport@alsadiqschool.com"> transport@alsadiqschool.com</a>.</p>
+                    </div>
+                </section>
+
+                <section class="faq-section"> <!-- FAQ section -->
+                    <h3>Frequently Asked Questions</h3> <!-- FAQ heading -->
+                    <div class="faq-container"> <!-- FAQ container -->
+                        <div class="faq-item"> <!-- FAQ item -->
+                            <div class="faq-question"> <!-- Question header -->
+                                <span>What are the school hours?</span>
+                                <span class="faq-toggle"><i class="fas fa-plus"></i></span> <!-- Toggle icon -->
+                            </div>
+                            <div class="faq-answer"> <!-- Answer section -->
+                                <p>School hours are from 7:45 AM to 2:30 PM for all grades, Sunday through Thursday. The campus opens at 7:00 AM and students should arrive no later than 7:40 AM for morning assembly.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>How can I apply for admission?</span>
+                                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>To apply for admission, you can visit our Admissions page to download the application form or apply online. You can also visit our Admissions Office during working hours. For specific questions, contact our Admissions Officer at <a href="mailto:admissions@alsadiqschool.ae">admissions@alsadiqschool.ae</a>.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Does the school provide transportation?</span>
+                                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we provide transportation services to most areas in Dubai. Transportation fees vary depending on the location. For more information, please contact our Transportation Department.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>What curriculum does the school follow?</span>
+                                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Al Sadiq Islamic English School follows the British National Curriculum, enhanced with Islamic education and Arabic language studies in compliance with UAE Ministry of Education requirements.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="navigation"> <!-- Navigation buttons -->
+                    <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i> Back to Home</a> <!-- Back link -->
+                    <a href="#" class="next-button">Explore Academics <i class="fas fa-arrow-right"></i></a> <!-- Next link -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer> <!-- Footer section -->
+        <div class="container"> <!-- Footer container -->
+            <p>&copy; 2025 Al Sadiq Islamic English School. All rights reserved.</p> <!-- Copyright -->
+            <div class="footer-links"> <!-- Footer links -->
+                <a href="#">Privacy Policy</a> <!-- Privacy link -->
+                <a href="#">Terms of Use</a> <!-- Terms link -->
+                <a href="#">Sitemap</a> <!-- Sitemap link -->
+            </div>
+        </div>
+    </footer>
+    <script src="script4.js"></script> <!-- Link to external JS file -->
+</body> <!-- End of body-->
+</html> <!-- End of html document-->

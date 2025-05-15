@@ -1,0 +1,409 @@
+:root {
+    --primary-color: #4313e1; /* Main brand color */
+    --secondary-color: #3ca55c; /* Secondary brand color */
+    --accent-color: #f9a826; /* Accent color used for highlights */
+    --text-color: #333; /* Default text color */
+    --light-bg: #f8f9fa; /* Light background for sections */
+    --white: #fff; /* White color */
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Standard box shadow */
+    --border-radius: 8px; /* Border radius for rounded elements */
+    --transition: all 0.3s ease; /* Default transition effect */
+  }
+  
+  * {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Set default font family */
+  }
+  
+  body {
+    color: var(--text-color); /* Set default text color */
+    line-height: 1.6; /* Set line height for better readability */
+    background: #f5f7fa; /* Set body background color */
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
+    padding-bottom: 60px; /* Extra space at the bottom */
+  }
+  
+  .container {
+    width: 90%; /* Width relative to parent */
+    max-width: 1200px; /* Maximum width for large screens */
+    margin: auto; /* Center horizontally */
+    padding: 0 15px; /* Padding inside the container */
+  }
+  
+  header, footer {
+    background: linear-gradient(135deg, var(--primary-color), #4313e1); /* Gradient background */
+    color: var(--white); /* Text color */
+    padding: 20px 0; /* Top and bottom padding */
+    box-shadow: var(--shadow); /* Apply shadow */
+    position: relative; /* Position relative for z-index */
+    z-index: 100; /* Stack above default elements */
+  }
+  
+  header .container, footer .container {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center items vertically */
+  }
+  
+  header h1, .contact-section h2, .contact-info h3, .contact-form h3, .map h3, .faq-section h3 {
+    font-weight: 600; /* Bold font */
+    position: relative; /* Required for the pseudo-element */
+    display: inline-block; /* Align heading with after content */
+    margin-bottom: 20px; /* Space below headings */
+  }
+  
+  header h1 {
+    font-size: 1.8rem; /* Increase heading size */
+  }
+  
+  header h1:after, .contact-section h2:after, .contact-info h3:after, .contact-form h3:after, .map h3:after, .faq-section h3:after {
+    content: ''; /* Insert decorative line */
+    position: absolute; /* Position it absolutely */
+    height: 2px; /* Height of the line */
+    background: var(--accent-color); /* Default highlight color */
+    bottom: -8px; /* Position below heading */
+    left: 0; /* Align to the left */
+  }
+  
+  header h1:after {
+    width: 60px; /* Width for header underline */
+    height: 3px; /* Thicker line for emphasis */
+  }
+  
+  .contact-section h2:after {
+    width: 50%; /* Half-width line */
+    background: var(--secondary-color); /* Use secondary color */
+    bottom: -10px; /* Adjust vertical spacing */
+  }
+  
+  .logo {
+    display: flex; /* Align logo image and text */
+    align-items: center; /* Center items vertically */
+    gap: 10px; /* Space between logo items */
+  }
+  
+  .logo img {
+    width: 50px; /* Set logo image width */
+  }
+  
+  nav ul {
+    display: flex; /* Horizontal menu */
+    list-style: none; /* Remove bullets */
+    gap: 20px; /* Space between links */
+  }
+  
+  nav a {
+    color: var(--white); /* Link text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Medium font weight */
+    padding: 5px 10px; /* Padding inside links */
+    border-radius: var(--border-radius); /* Rounded corners */
+    transition: var(--transition); /* Smooth hover effect */
+  }
+  
+  nav a:hover {
+    background: rgba(255, 255, 255, 0.1); /* Light hover background */
+  }
+  
+  main {
+    padding: 40px 0; /* Vertical padding for main content */
+  }
+  
+  .contact-section, .contact-info, .contact-form, .map, .faq-section {
+    background: var(--white); /* White background for sections */
+    border-radius: var(--border-radius); /* Rounded corners */
+    box-shadow: var(--shadow); /* Apply box shadow */
+    padding: 25px 30px; /* Padding inside boxes */
+    margin-bottom: 30px; /* Space below each box */
+  }
+  
+  .contact-info:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+  .contact-grid {
+    display: grid; /* Use CSS grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 30px; /* Space between columns */
+    margin-top: 30px; /* Top margin */
+  }
+  
+  .info-item {
+    display: flex; /* Align icon and text horizontally */
+    align-items: flex-start; /* Align at the top */
+    margin-bottom: 15px; /* Space below each item */
+  }
+  
+  .info-icon {
+    color: var(--secondary-color); /* Icon color */
+    font-size: 1.2rem; /* Icon size */
+    margin-right: 15px; /* Space after icon */
+    min-width: 25px; /* Minimum width for alignment */
+    text-align: center; /* Center text inside */
+  }
+  
+  .contact-info a {
+    color: var(--primary-color); /* Link color */
+    text-decoration: none; /* No underline */
+    transition: var(--transition); /* Smooth transition */
+  }
+  
+  .contact-info a:hover {
+    color: var(--secondary-color); /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  .social-links {
+    display: flex; /* Display social icons in a row */
+    gap: 15px; /* Space between icons */
+    margin-top: 20px; /* Top margin */
+  }
+  
+  .social-links a {
+    display: flex; /* Center icons */
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Width of each icon box */
+    height: 40px; /* Height of each icon box */
+    border-radius: 50%; /* Circular shape */
+    background: var(--white); /* White background */
+    color: var(--primary-color); /* Icon color */
+    transition: var(--transition); /* Smooth transition */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow */
+  }
+  
+  .social-links a:hover {
+    background: var(--primary-color); /* Background on hover */
+    color: var(--white); /* Change icon color */
+    transform: translateY(-3px); /* Lift effect */
+  }
+  
+  form {
+    display: grid; /* Use grid for form layout */
+    gap: 20px; /* Space between fields */
+  }
+  
+  form div {
+    display: flex; /* Stack label and input */
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px; /* Space under label */
+    font-weight: 500; /* Slightly bold */
+  }
+  
+  input, textarea, select {
+    padding: 12px 15px; /* Inner padding */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: var(--border-radius); /* Rounded inputs */
+    font-size: 1rem; /* Font size */
+    transition: var(--transition); /* Smooth interactions */
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    outline: none; /* Remove default outline */
+    border-color: var(--secondary-color); /* Highlight border */
+    box-shadow: 0 0 0 3px rgba(60, 165, 92, 0.1); /* Subtle glow */
+  }
+  
+  .form-row {
+    display: grid; /* Layout for multiple fields */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Gap between columns */
+  }
+  
+  .form-actions {
+    display: flex; /* Align buttons in a row */
+    gap: 15px; /* Space between buttons */
+    margin-top: 10px; /* Top margin */
+  }
+  
+  button {
+    padding: 12px 25px; /* Button padding */
+    border: none; /* No border */
+    border-radius: var(--border-radius); /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-weight: 600; /* Bold text */
+    font-size: 1rem; /* Font size */
+    transition: var(--transition); /* Smooth effects */
+  }
+  
+  button[type="submit"] {
+    background: var(--secondary-color); /* Submit button color */
+    color: var(--white); /* White text */
+  }
+  
+  button[type="submit"]:hover {
+    background: #339a4f; /* Darker green */
+    transform: translateY(-2px); /* Lift effect */
+  }
+  
+  button[type="reset"] {
+    background: #f1f1f1; /* Light gray background */
+    color: var(--text-color); /* Standard text color */
+  }
+  
+  button[type="reset"]:hover {
+    background: #e6e6e6; /* Slightly darker on hover */
+  }
+  
+  #formSuccess, #formError {
+    padding: 15px; /* Inner spacing */
+    border-radius: var(--border-radius); /* Rounded corners */
+    font-weight: 500; /* Bold text */
+    margin-top: 20px; /* Space on top */
+    display: none; /* Hidden by default */
+  }
+  
+  #formSuccess {
+    background: rgba(76, 175, 80, 0.1); /* Light green background */
+    color: #2e7d32; /* Green text */
+    border: 1px solid rgba(76, 175, 80, 0.3); /* Green border */
+  }
+  
+  #formError {
+    background: rgba(244, 67, 54, 0.1); /* Light red background */
+    color: #d32f2f; /* Red text */
+    border: 1px solid rgba(244, 67, 54, 0.3); /* Red border */
+  }
+  
+  .map-container {
+    position: relative; /* Required for absolute child */
+    overflow: hidden; /* Hide overflow */
+    border-radius: var(--border-radius); /* Rounded corners */
+    height: 400px; /* Set height */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow */
+  }
+  
+  .map-container iframe {
+    position: absolute; /* Position map */
+    top: 0; left: 0;
+    width: 100%; height: 100%; /* Full coverage */
+    border: 0; /* No border */
+  }
+  
+  .navigation {
+    margin-top: 30px; /* Top margin */
+    display: flex; /* Align nav buttons */
+    justify-content: space-between; /* Space out buttons */
+  }
+  
+  .back-button, .next-button {
+    display: inline-flex; /* Align icon and text */
+    align-items: center; /* Center vertically */
+    padding: 10px 20px; /* Button padding */
+    background: var(--primary-color); /* Button color */
+    color: var(--white); /* Text color */
+    text-decoration: none; /* No underline */
+    border-radius: var(--border-radius); /* Rounded edges */
+    transition: var(--transition); /* Smooth transition */
+    font-weight: 500; /* Bold text */
+    gap: 8px; /* Space between icon and text */
+  }
+  
+  .back-button:hover, .next-button:hover {
+    background: #173a56; /* Darker shade */
+    transform: translateY(-2px); /* Lift on hover */
+  }
+  
+  .faq-item {
+    margin-bottom: 15px; /* Space below each item */
+    border-radius: var(--border-radius); /* Rounded corners */
+    border: 1px solid #eee; /* Light border */
+    overflow: hidden; /* Hide overflow */
+  }
+  
+  .faq-question {
+    display: flex; /* Align icon and question */
+    justify-content: space-between; /* Spread content */
+    align-items: center; /* Center items */
+    padding: 15px 20px; /* Inner padding */
+    background: var(--light-bg); /* Background color */
+    cursor: pointer; /* Pointer cursor */
+    font-weight: 500; /* Bold text */
+    transition: var(--transition); /* Smooth transition */
+  }
+  
+  .faq-question:hover {
+    background: #edf2f7; /* Light hover color */
+  }
+  
+  .faq-answer {
+    padding: 0 20px; /* Initial horizontal padding */
+    max-height: 0; /* Collapse answer */
+    overflow: hidden; /* Hide overflow content */
+    transition: max-height 0.3s ease, padding 0.3s ease; /* Animate height and padding */
+  }
+  
+  .faq-item.active .faq-answer {
+    padding: 15px 20px; /* Reveal padding */
+    max-height: 1000px; /* Expand answer */
+  }
+  
+  .faq-toggle {
+    transition: transform 0.3s ease; /* Rotate toggle icon */
+  }
+  
+  .faq-item.active .faq-toggle {
+    transform: rotate(45deg); /* Rotate on open */
+  }
+  
+  .footer-links {
+    display: flex; /* Display links in a row */
+    gap: 20px; /* Space between links */
+  }
+  
+  .footer-links a {
+    color: var(--white); /* Text color */
+    text-decoration: none; /* Remove underline */
+    transition: var(--transition); /* Smooth hover */
+  }
+  
+  .footer-links a:hover {
+    color: var(--accent-color); /* Highlight on hover */
+  }
+  
+  .loading {
+    display: none; /* Hidden by default */
+    position: relative; /* Relative to spinner */
+    width: 25px; height: 25px; /* Size of loader */
+  }
+  
+  .loading:after {
+    content: ''; /* Add spinner circle */
+    position: absolute; /* Position absolutely */
+    width: 100%; height: 100%; /* Full size */
+    border-radius: 50%; /* Make circle */
+    border: 3px solid rgba(255, 255, 255, 0.3); /* Transparent border */
+    border-top-color: var(--white); /* Colored top border */
+    animation: spin 1s linear infinite; /* Spinning effect */
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); } /* Complete spin */
+  }
+  
+  @media (max-width: 768px) {
+    header .container, footer .container {
+      flex-direction: column; /* Stack vertically */
+      text-align: center; /* Center text */
+    }
+  
+    header h1:after {
+      left: 50%; /* Center underline */
+      transform: translateX(-50%); /* Align center */
+    }
+  
+    nav ul, .footer-links {
+      justify-content: center; /* Center links */
+      margin-top: 10px; /* Space above */
+    }
+  
+    .form-actions {
+      flex-direction: column; /* Stack buttons */
+    }
+  }
+  

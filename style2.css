@@ -1,0 +1,277 @@
+* {
+    margin: 0; /* Remove default margin from all elements */
+    padding: 0; /* Remove default padding from all elements */
+    box-sizing: border-box; /* Use border-box sizing for consistent element sizing */
+    font-family: 'Arial', sans-serif; /* Set default font for all elements */
+}
+
+body {
+    background-color: #f5f5f5; /* Set light gray background for the page */
+    color: #333333; /* Set default text color to dark gray */
+    line-height: 1.6; /* Improve readability with increased line height */
+}
+
+/* Header Styles */
+header {
+    background-color: #4313e1; /* Set a vibrant blue background color */
+    padding: 20px 0; /* Add vertical padding to header */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow below header */
+}
+
+.header-container {
+    display: flex; /* Use flexbox to align header content */
+    justify-content: space-between; /* Space out elements evenly */
+    align-items: center; /* Vertically center the items */
+    max-width: 1200px; /* Limit maximum width of header */
+    margin: 0 auto; /* Center the header container horizontally */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+.logo {
+    display: flex; /* Use flexbox for logo alignment */
+    align-items: center; /* Vertically center logo elements */
+}
+
+.logo h1 {
+    color: #ffffff; /* Set logo text color to white */
+    font-size: 24px; /* Set logo font size */
+    margin-left: 10px; /* Add space between image and text */
+}
+
+.logo-img {
+    width: 60px; /* Set logo image width */
+    height: 60px; /* Set logo image height */
+    background-color: #ffffff; /* White background for logo circle */
+    border-radius: 50%; /* Make logo image circular */
+    display: flex; /* Center the text inside the logo image */
+    align-items: center; /* Vertically center text */
+    justify-content: center; /* Horizontally center text */
+    font-size: 24px; /* Set font size inside logo circle */
+    font-weight: bold; /* Make text bold */
+    color: #046a38; /* Set text color inside logo */
+}
+
+nav ul {
+    display: flex; /* Use flex layout for navigation menu */
+    list-style: none; /* Remove bullet points */
+}
+
+nav ul li {
+    margin-left: 20px; /* Add spacing between nav items */
+}
+
+nav ul li a {
+    color: #ffffff; /* Set link color to white */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: 500; /* Make links semi-bold */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+    padding: 10px 15px; /* Add padding around links */
+    border-radius: 5px; /* Slightly round the corners */
+}
+
+nav ul li a:hover {
+    color: #ffc107; /* Change text color on hover to gold */
+    background-color: rgba(255, 255, 255, 0.1); /* Add subtle background on hover */
+}
+
+/* Main Content */
+.main-content {
+    max-width: 900px; /* Limit main content width */
+    margin: 40px auto; /* Center content and add vertical margin */
+    padding: 20px; /* Add internal spacing */
+}
+
+.page-title {
+    font-size: 36px; /* Large title font */
+    margin-bottom: 30px; /* Space below the title */
+    color: #046a38; /* Green title color */
+    text-align: center; /* Center align the title */
+}
+
+.page-description {
+    text-align: center; /* Center align the description */
+    margin-bottom: 40px; /* Add space below the description */
+    font-size: 18px; /* Set description text size */
+}
+
+/* Program Cards */
+.program-card {
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 10px; /* Rounded card corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow around cards */
+    margin-bottom: 30px; /* Space below each card */
+    overflow: hidden; /* Clip overflowing content */
+}
+
+.program-header {
+    background-color: #046a38; /* Green background for card headers */
+    color: #ffffff; /* White text for headers */
+    padding: 15px 20px; /* Internal spacing */
+}
+
+.program-header h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Set header font size */
+}
+
+.program-content {
+    padding: 20px; /* Padding inside card content */
+}
+
+.program-image {
+    height: 200px; /* Set fixed height for image area */
+    background-color: #ddd; /* Light gray background */
+    display: flex; /* Center the text/image */
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    margin-bottom: 20px; /* Space below the image */
+    border-radius: 5px; /* Slightly round the corners */
+    font-size: 18px; /* Text size for placeholder */
+    color: #777; /* Gray color for placeholder text */
+}
+
+.program-details {
+    margin-top: 20px; /* Space above the details section */
+}
+
+.program-details h3 {
+    color: #046a38; /* Green color for section headings */
+    margin-bottom: 10px; /* Space below heading */
+    font-size: 20px; /* Set font size */
+}
+
+.program-details ul {
+    list-style-position: inside; /* Place bullets inside the content area */
+    margin-bottom: 15px; /* Space below list */
+    padding-left: 20px; /* Indent list items */
+}
+
+.program-details li {
+    margin-bottom: 5px; /* Space between list items */
+}
+
+/* Islamic Studies Section */
+.islamic-studies {
+    background-color: #f9f1dd; /* Light beige background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 70px; /* Internal spacing */
+    margin: 40px 0; /* Vertical spacing */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow around box */
+}
+
+.islamic-studies h2 {
+    color: #046a38; /* Green heading */
+    text-align: center; /* Center align heading */
+    margin-bottom: 20px; /* Space below heading */
+    font-size: 28px; /* Set heading size */
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block; /* Make button display inline */
+    padding: 10px 20px; /* Padding around button text */
+    background-color: #046a38; /* Green background */
+    color: #ffffff; /* White text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Round the corners */
+    margin-top: 20px; /* Space above button */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.back-button:hover {
+    background-color: #035c2f; /* Darker green on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 20px; /* Space inside footer */
+    text-align: center; /* Center the footer text */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Stack header items vertically */
+        text-align: center; /* Center text in small viewports */
+    }
+
+    .logo {
+        margin-bottom: 15px; /* Add space below logo */
+        justify-content: center; /* Center logo horizontally */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Center nav items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Vertical spacing between nav items */
+    }
+    /* Accordion Styles */
+    .accordion-toggle {
+        background-color: #f8f9fa; /* Light gray background for the accordion toggle */
+        color: #333; /* Dark text color for contrast */
+        padding: 12px 20px; /* Padding inside the button */
+        border: 1px solid #ddd; /* Light border for separation */
+        font-size: 1.1rem; /* Slightly larger font size for readability */
+        font-weight: bold; /* Make the text bold */
+        text-align: left; /* Align text to the left */
+        width: 100%; /* Full width of the container */
+        transition: background-color 0.3s ease; /* Smooth transition on background color change */
+        cursor: pointer; /* Show pointer cursor on hover */
+    }
+    
+    .accordion-toggle:hover {
+        background-color: #e9ecef; /* Slightly darker background on hover */
+    }
+    
+    .accordion-content {
+        display: none; /* Hide content by default */
+        background-color: #fff; /* White background for content */
+        border: 1px solid #ddd; /* Light border around the content */
+        border-top: none; /* Remove top border to connect with toggle */
+        padding: 15px 20px; /* Padding inside the content area */
+    }
+    
+    /* Scroll to Top Button */
+    .scroll-top {
+        position: fixed; /* Fixed position on screen */
+        bottom: 30px; /* Distance from bottom of the screen */
+        right: 30px; /* Distance from right side of the screen */
+        background-color: #343a40; /* Dark background for the button */
+        color: white; /* White icon or text */
+        padding: 12px 15px; /* Padding inside the button */
+        border-radius: 50%; /* Circular button shape */
+        font-size: 22px; /* Size of the icon/text inside */
+        cursor: pointer; /* Show pointer cursor on hover */
+        display: none; /* Hidden by default, shown with JS when needed */
+        z-index: 1000; /* Keep the button above other elements */
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* Subtle shadow for elevation */
+        transition: background-color 0.3s ease; /* Smooth background color change on hover */
+    }
+    
+    .scroll-top:hover {
+        background-color: #495057; /* Lighter dark background on hover */
+    }
+    
+    /* Mobile Improvements */
+    @media screen and (max-width: 768px) {
+        .program-content, .program-details {
+            padding: 10px; /* Reduce padding for smaller screens */
+        }
+    
+        .accordion-toggle {
+            font-size: 1rem; /* Slightly smaller font on mobile */
+            padding: 10px 15px; /* Reduce padding for smaller screens */
+        }
+    
+        .scroll-top {
+            bottom: 20px; /* Adjust button position on mobile */
+            right: 20px; /* Adjust button position on mobile */
+        }
+    }
+    
+ }

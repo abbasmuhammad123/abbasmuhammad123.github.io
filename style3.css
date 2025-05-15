@@ -1,0 +1,260 @@
+* { /* Apply base styles to all elements */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    font-family: 'Arial', sans-serif; /* Set default font */
+}
+
+body {
+    background-color: #f5f5f5; /* Set light gray background */
+    color: #333333; /* Set base text color */
+    line-height: 1.6; /* Set line height for readability */
+}
+
+/* Header Styles */
+header {
+    background-color: #4313e1; /* Set header background color */
+    padding: 20px 0; /* Add vertical padding */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add shadow below header */
+}
+
+.header-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Vertically center items */
+    max-width: 1200px; /* Limit width */
+    margin: 0 auto; /* Center container */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+.logo {
+    display: flex; /* Use flexbox for logo */
+    align-items: center; /* Center logo vertically */
+}
+
+.logo h1 {
+    color: #ffffff; /* White text */
+    font-size: 24px; /* Set font size */
+    margin-left: 10px; /* Space from logo icon */
+}
+
+.logo-img {
+    width: 60px; /* Set width */
+    height: 60px; /* Set height */
+    background-color: #ffffff; /* White background */
+    border-radius: 50%; /* Make it circular */
+    display: flex; /* Center content */
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    font-size: 24px; /* Set font size */
+    font-weight: bold; /* Make text bold */
+    color: #046a38; /* Set text color */
+}
+
+nav ul {
+    display: flex; /* Horizontal list */
+    list-style: none; /* Remove bullet points */
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between items */
+}
+
+nav ul li a {
+    color: #ffffff; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Semi-bold text */
+    transition: color 0.3s ease; /* Smooth color transition */
+    padding: 10px 15px; /* Padding inside links */
+    border-radius: 5px; /* Rounded corners */
+}
+
+nav ul li a:hover {
+    color: #ffc107; /* Highlight color on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Slight background on hover */
+}
+
+/* Main Content */
+.main-content {
+    max-width: 900px; /* Set content width */
+    margin: 40px auto; /* Center with top margin */
+    padding: 20px; /* Inner spacing */
+}
+
+.page-title {
+    font-size: 36px; /* Large title */
+    margin-bottom: 30px; /* Space below */
+    color: #05c8ef; /* blue water clour title */
+    text-align: center; /* Centered text */
+}
+
+.page-description {
+    text-align: center; /* Centered description */
+    margin-bottom: 40px; /* Space below */
+    font-size: 18px; /* Slightly larger text */
+}
+
+/* Testimonial Cards */
+.testimonial-cards {
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: 1fr; /* Single column */
+    gap: 30px; /* Space between cards */
+}
+
+.testimonial-card {
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 30px; /* Inner spacing */
+    position: relative; /* For pseudo element positioning */
+}
+
+.testimonial-card:before {
+    content: '"'; /* Add quote symbol */
+    position: absolute; /* Position independently */
+    top: 10px; /* Distance from top */
+    left: 20px; /* Distance from left */
+    font-size: 60px; /* Large quote */
+    color: rgba(4, 106, 56, 0.1); /* Light green tint */
+    font-family: Georgia, serif; /* Serif font for quotes */
+}
+
+.testimonial-content {
+    font-style: italic; /* Italic text */
+    margin-bottom: 20px; /* Space below */
+    padding-left: 20px; /* Indent text */
+}
+
+.testimonial-author {
+    display: flex; /* Flex layout for author */
+    align-items: center; /* Vertically center */
+    border-top: 1px solid #eee; /* Top border */
+    padding-top: 20px; /* Space above */
+}
+
+.author-image {
+    width: 60px; /* Size of image */
+    height: 60px; /* Same height */
+    background-color: #ddd; /* Gray background */
+    border-radius: 50%; /* Circular */
+    margin-right: 15px; /* Space to right */
+    display: flex; /* Center initials or image */
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+}
+
+.author-info h3 {
+    color: #5d86e5; /* blue name */
+    margin-bottom: 10px; /* Space below name */
+}
+
+.author-info p {
+    color: #777; /* Light gray job title */
+    font-size: 14px; /* Smaller text */
+}
+
+/* Categories */
+.testimonial-category {
+    margin: 40px 0 20px; /* Top and bottom spacing */
+}
+
+.testimonial-category h2 {
+    color: #0882ce; /* Blue heading */
+    font-size: 24px; /* Medium heading size */
+    margin-bottom: 20px; /* Space below */
+    padding-bottom: 10px; /* Padding below text */
+    border-bottom: 2px solid #ffc107; /* Yellow underline */
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: #a7da10; /* Bright green background */
+    color: #ffffff; /* White text */
+    text-align: center; /* Center text */
+    padding: 40px 20px; /* Spacing inside */
+    margin: 40px -20px -20px; /* Pulls full width */
+    border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+}
+
+.cta-section h2 {
+    font-size: 28px; /* Large heading */
+    margin-bottom: 20px; /* Space below */
+}
+
+.cta-section p {
+    margin-bottom: 30px; /* Space below */
+    max-width: 600px; /* Limit width */
+    margin-left: auto; /* Center */
+    margin-right: auto; /* Center */
+}
+
+.cta-button {
+    display: inline-block; /* Inline block for button */
+    padding: 12px 30px; /* Button padding */
+    background-color: #80b6ef; /* light blue background */
+    color: #333; /* Dark text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.cta-button:hover {
+    background-color: #20e589; /* light green */
+    transform: translateY(-3px); /* Lift button slightly */
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block; /* Inline block */
+    padding: 10px 20px; /* Padding inside button */
+    background-color: #7be484; /* green background */
+    color: #ffffff; /* White text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px; /* Space above */
+    transition: background-color 0.3s ease; /* Smooth color change */
+}
+
+.back-button:hover {
+    background-color: #c59e1c; /* Dark orange on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 20px; /* Spacing inside */
+    text-align: center; /* Centered text */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) { /* For tablets and smaller screens */
+    .header-container {
+        flex-direction: column; /* Stack elements */
+        text-align: center; /* Center text */
+    }
+
+    .logo {
+        margin-bottom: 15px; /* Space below logo */
+        justify-content: center; /* Center logo horizontally */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items */
+        align-items: center; /* Center align */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Vertical spacing between links */
+    }
+
+    .testimonial-author {
+        flex-direction: column; /* Stack author details */
+        text-align: center; /* Center text */
+    }
+
+    .author-image {
+        margin: 0 0 15px 0; /* Space below image */
+    }
+}
