@@ -1,0 +1,212 @@
+<!DOCTYPE html> <!-- Defines the document type as HTML5 -->
+<html lang="en"> <!-- Opens the HTML document with English as the language -->
+<head>
+  <!-- Meta Information -->
+  <meta charset="UTF-8" /> <!-- Sets character encoding to UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Responsive layout on all devices -->
+  <title>Al Sadiq Islamic English School</title> <!-- Webpage title shown on browser tab -->
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" /> <!-- Link to external CSS file -->
+
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" /> <!-- AOS animation stylesheet -->
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header data-aos="fade-down"> <!-- Animate header with fade-down on scroll -->
+    <div class="header-container"> <!-- Container for header content -->
+      <!-- Logo Area -->
+      <div class="logo"> <!-- Logo section -->
+        <div class="logo-img">AS</div> <!-- Placeholder text logo -->
+        <h1>Al Sadiq Islamic English School</h1> <!-- School name heading -->
+      </div>
+      <!-- Mobile Menu Toggle -->
+      <div class="mobile-menu" onclick="toggleMenu()">☰</div> <!-- Hamburger icon for mobile view -->
+      <!-- Navigation Links -->
+      <nav id="main-nav"> <!-- Navigation bar -->
+        <ul>
+          <li><a href="index.html">Home</a></li> <!-- Home link -->
+          <li><a href="aboutus.html">About Us</a></li> <!-- About Us link -->
+          <li><a href="programs.html">Programs</a></li> <!-- Programs link -->
+          <li><a href="testimonials.html">Testimonials</a></li> <!-- Testimonials link -->
+          <li><a href="contact.html">Contact</a></li> <!-- Contact link -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero" data-aos="fade-up"> <!-- Hero section with upward animation -->
+    <h2 class="fade-in">Excellence in Islamic Education</h2> <!-- Main tagline -->
+    <p class="fade-in delay-1">Nurturing young minds with Islamic values and academic excellence since 1989</p> <!-- Sub tagline -->
+    <a href="contact.html" class="cta-button fade-in delay-2">Apply Now</a> <!-- Call-to-action button -->
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about"> <!-- About section -->
+    <h2 class="section-title" data-aos="fade-up">About Us</h2> <!-- About section heading -->
+    <div class="about-content"> <!-- Container for about cards -->
+      <!-- Islamic Values Card -->
+      <div class="about-card fade-in" data-aos="fade-up"> <!-- About card with icon and text -->
+        <div style="font-size: 40px; color: #01579b;">🕌</div> <!-- Icon representing Islamic values -->
+        <h3>Islamic Values</h3> <!-- Card title -->
+        <p>We instill strong Islamic principles guiding students to become compassionate and responsible individuals.</p> <!-- Card description -->
+      </div>
+      <!-- Academic Excellence Card -->
+      <div class="about-card fade-in delay-1" data-aos="fade-up" data-aos-delay="100"> <!-- Second card with delay -->
+        <div style="font-size: 40px; color: #01579b;">📚</div> <!-- Icon for academics -->
+        <h3>Academic Excellence</h3>
+        <p>Our curriculum blends international standards with Islamic teachings for a holistic education.</p>
+      </div>
+      <!-- Global Perspective Card -->
+      <div class="about-card fade-in delay-2" data-aos="fade-up" data-aos-delay="200"> <!-- Third card -->
+        <div style="font-size: 40px; color: #01579b;">🌍</div> <!-- Icon for global view -->
+        <h3>Global Perspective</h3>
+        <p>We prepare students to thrive globally while preserving their Islamic identity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section id="programs" class="programs"> <!-- Programs section -->
+    <div class="programs-container"> <!-- Wrapper for program content -->
+      <h2 class="section-title" data-aos="zoom-in">Our Programs</h2> <!-- Heading -->
+      <div class="programs-grid"> <!-- Grid for programs -->
+        <!-- Elementary School Program -->
+        <div class="program-card fade-in" data-aos="zoom-in"> <!-- Card for Elementary -->
+          <div class="program-img" style="background-image: url('Elementary Education.jpeg'); background-size: cover; background-position: center; height: 200px;"></div> <!-- Image -->
+          <div class="program-content"> <!-- Text content -->
+            <h3>Elementary School</h3>
+            <p>Core subjects integrated with Islamic studies for grades 1–5.</p>
+            <a href="#" class="read-more">Learn More</a>
+          </div>
+        </div>
+        <!-- Middle School Program -->
+        <div class="program-card fade-in delay-1" data-aos="zoom-in" data-aos-delay="100"> <!-- Middle School card -->
+          <div class="program-img" style="background-image: url('middle school.jpg'); background-size: cover; background-position: center; height: 200px;"></div>
+          <div class="program-content">
+            <h3>Middle School</h3>
+            <p>Comprehensive academics and Islamic character building for grades 6–8.</p>
+            <a href="#" class="read-more">Learn More</a>
+          </div>
+        </div>
+        <!-- High School Program -->
+        <div class="program-card fade-in delay-2" data-aos="zoom-in" data-aos-delay="200"> <!-- High School card -->
+          <div class="program-img" style="background-image: url('high school.jpeg'); background-size: cover; background-position: center; height: 200px;"></div>
+          <div class="program-content">
+            <h3>High School</h3>
+            <p>College preparatory courses and Islamic values for grades 9–12.</p>
+            <a href="#" class="read-more">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials"> <!-- Testimonials section -->
+    <h2 class="section-title" data-aos="fade-up">What Parents Say</h2> <!-- Section heading -->
+    <div class="testimonial-slider"> <!-- Wrapper for slider -->
+      <div class="testimonial-container" id="testimonial-container"> <!-- Slider container -->
+        <!-- Testimonial 1 -->
+        <div class="testimonial fade-in" data-aos="fade-left"> <!-- Testimonial card -->
+          <div class="testimonial-content">
+            <p>"Al Sadiq provided a perfect mix of academics and Islamic values. Teachers are dedicated and kind."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-icon">👤</div>
+            <h4>Ahmed Ali</h4>
+            <p>Parent of 3 Students</p>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="testimonial" data-aos="fade-left" data-aos-delay="100">
+          <div class="testimonial-content">
+            <p>"My daughter loves learning and has grown in her faith. Thankful for this nurturing environment."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-icon">👤</div>
+            <h4>Umer Razzaq</h4>
+            <p>Parent of a 9th Grader</p>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="testimonial" data-aos="fade-left" data-aos-delay="200">
+          <div class="testimonial-content">
+            <p>"High academic standards and Islamic values helped my son grow into a confident student."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-icon">👤</div>
+            <h4>Ahmed Imran</h4>
+            <p>Parent of a High School Student</p>
+          </div>
+        </div>
+      </div>
+      <!-- Slider Navigation Dots -->
+      <div class="slider-nav"> <!-- Dots for navigation -->
+        <div class="slider-dot active" onclick="changeSlide(0)"></div> <!-- First dot -->
+        <div class="slider-dot" onclick="changeSlide(1)"></div> <!-- Second dot -->
+        <div class="slider-dot" onclick="changeSlide(2)"></div> <!-- Third dot -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer data-aos="fade-up"> <!-- Footer with animation -->
+    <div class="footer-container"> <!-- Wrapper for footer -->
+      <!-- Footer Branding -->
+      <div class="footer-logo"> <!-- Branding info -->
+        <h2>Al Sadiq Islamic English School</h2>
+        <p>Excellence in Islamic Education Since 1989</p>
+      </div>
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Contact Info -->
+      <div class="footer-links">
+        <h3>Contact Info</h3>
+        <ul>
+          <li>Behind Al Tawar Center - 5th St - Al Qusais - Al Qusais 2 - Dubai</li>
+          <li>Dubai, UAE</li>
+          <li>info@alsadiqschool.com</li>
+          <li>04 263 4083</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Social Media Links -->
+    <div class="social-links"> <!-- Social media icons -->
+      <a href="https://www.facebook.com/alsadiqschooldubai/" class="social-icon">f</a>
+      <a href="https://x.com/AlSadiqSocial" class="social-icon">X</a>
+      <a href="https://www.linkedin.com/company/al-sadiq-islamic-english-school/" class="social-icon">in</a>
+      <a href="https://www.instagram.com/alsadiqschool/?hl=en" class="social-icon">ig</a>
+    </div>
+    <!-- Copyright -->
+    <div class="copyright">
+      <p>&copy; 2025 Al Sadiq Islamic English School. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script> <!-- Link to external JS file -->
+
+  <!-- AOS Animation Initialization -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> <!-- AOS library script -->
+  <script>
+    AOS.init({
+      once: true,       // Animation runs only once per element
+      duration: 800,    // Duration in milliseconds
+      offset: 100       // Offset before animation triggers
+    });
+  </script>
+</body> <!-- closing body tag-->
+</html> <!--end of html document-->
