@@ -1,0 +1,324 @@
+/* Reset & Base Styles */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+    font-family: 'Arial', sans-serif; /* Set base font to Arial */
+}
+:root {
+    --primary: #4313e1; /* Primary color */
+    --secondary: #ffc107; /* Secondary color */
+    --accent: #01579b; /* Accent color */
+    --white: #fff; /* White color */
+    --gray: #f5f5f5; /* Light gray background */
+    --dark: #333; /* Dark text color */
+}
+body {
+    background: var(--gray); /* Set background color */
+    color: var(--dark); /* Set text color */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Header */
+header {
+    background: var(--primary); /* Set header background */
+    padding: 20px 0; /* Vertical padding */
+    position: sticky; top: 0; z-index: 100; /* Stick header to top */
+    box-shadow: 0 2px 10px rgba(0,0,0,.2); /* Add shadow */
+}
+.header-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items apart */
+    align-items: center; /* Vertically center items */
+    max-width: 1200px; /* Limit max width */
+    margin: auto; /* Center horizontally */
+    padding: 0 20px; /* Horizontal padding */
+}
+.logo {
+    display: flex; /* Flex for logo */
+    align-items: center; /* Center vertically */
+}
+.logo h1 {
+    color: var(--white); /* White text */
+    font-size: 24px; /* Font size */
+    margin-left: 10px; /* Space from logo image */
+}
+.logo-img {
+    width: 60px; height: 60px; /* Set size */
+    background: var(--white); /* White background */
+    border-radius: 50%; /* Circle shape */
+    display: flex; align-items: center; justify-content: center; /* Center content */
+    font-size: 24px; font-weight: bold; /* Large, bold text */
+    color: var(--primary); /* Primary color text */
+}
+
+/* Navigation */
+nav ul {
+    display: flex; /* Horizontal list */
+    list-style: none; /* Remove bullets */
+}
+nav li {
+    margin-left: 20px; /* Space between items */
+}
+nav a {
+    color: var(--white); /* White text */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Medium weight */
+    padding: 10px 15px; /* Padding for clickable area */
+    border-radius: 5px; /* Slightly rounded corners */
+    transition: 0.3s; /* Smooth transition */
+}
+nav a:hover {
+    color: var(--secondary); /* Change text color */
+    background: rgba(255,255,255,0.1); /* Light background on hover */
+}
+.mobile-menu {
+    display: none; /* Hidden by default */
+    font-size: 24px; color: var(--white); /* Icon size and color */
+    cursor: pointer; /* Show pointer on hover */
+}
+
+/* Hero Section */
+.hero {
+    height: 500px; /* Fixed height */
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("/api/placeholder/1200/500") center/cover no-repeat; /* Overlayed background image */
+    color: var(--white); /* White text */
+    display: flex; /* Flex layout */
+    flex-direction: column; justify-content: center; align-items: center; /* Center content */
+    text-align: center; /* Center text */
+    padding: 0 20px; /* Horizontal padding */
+}
+.hero h2 {
+    font-size: 42px; /* Large heading */
+    margin-bottom: 20px; /* Space below */
+    text-shadow: 2px 2px 4px rgba(0,0,0,.5); /* Add shadow for readability */
+}
+.hero p {
+    font-size: 20px; /* Paragraph font size */
+    max-width: 700px; /* Limit width */
+    margin-bottom: 30px; /* Space below */
+}
+.cta-button {
+    padding: 12px 30px; /* Button padding */
+    background: var(--secondary); color: var(--dark); /* Button colors */
+    border: none; border-radius: 50px; /* Rounded button */
+    font-size: 18px; font-weight: bold; /* Bold text */
+    cursor: pointer; text-decoration: none; /* Pointer cursor and no underline */
+    transition: 0.3s; /* Smooth hover effect */
+}
+.cta-button:hover {
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 10px 20px rgba(0,0,0,.2); /* Shadow effect */
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 36px; margin-bottom: 20px; /* Title size and spacing */
+    color: var(--primary); position: relative; /* Primary color and relative position */
+    display: inline-block; /* Inline block for positioning */
+}
+.section-title:after {
+    content: ''; position: absolute; /* Decorative underline */
+    bottom: -10px; left: 50%; /* Position below title */
+    transform: translateX(-50%); /* Center it */
+    width: 80px; height: 4px; /* Size of line */
+    background: var(--secondary); /* Secondary color */
+}
+
+/* Grid & Cards */
+.about, .programs, .testimonials, .contact {
+    padding: 80px 20px; /* Section padding */
+}
+.about, .testimonials, .contact {
+    max-width: 1200px; margin: auto; text-align: center; /* Centered content */
+}
+.about-content, .footer-container {
+    display: flex; flex-wrap: wrap; justify-content: space-between; /* Responsive layout */
+}
+.about-card, .program-card {
+    flex: 1; min-width: 250px; margin: 20px; padding: 30px; /* Card dimensions */
+    background: var(--white); border-radius: 10px; /* White and rounded */
+    box-shadow: 0 5px 15px rgba(0,0,0,.1); /* Soft shadow */
+    transition: transform 0.3s; /* Hover animation */
+}
+.about-card:hover, .program-card:hover {
+    transform: translateY(-10px); /* Move up on hover */
+}
+.about-card i, .program-content h3 {
+    color: var(--accent); /* Accent colored icons/headings */
+}
+.programs-grid {
+    display: grid; /* CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 30px; margin-top: 50px; /* Grid spacing */
+}
+.program-img {
+    height: 200px; background: #ddd; /* Placeholder image */
+    display: flex; align-items: center; justify-content: center; /* Center content */
+    color: #777; /* Gray text */
+}
+.read-more {
+    display: inline-block; /* Inline block link */
+    padding: 8px 20px; /* Padding */
+    background: var(--accent); color: var(--white); /* Colors */
+    border-radius: 5px; text-decoration: none; /* Rounded and no underline */
+    transition: 0.3s; /* Smooth hover */
+}
+.read-more:hover {
+    background: #014a81; /* Darker on hover */
+}
+
+/* Testimonials */
+.testimonial-slider {
+    margin-top: 50px; overflow: hidden; position: relative; /* Slider container */
+}
+.testimonial-container {
+    display: flex; transition: transform 0.5s ease; /* Animate slide */
+}
+.testimonial {
+    min-width: 100%; padding: 30px; /* Full width slide */
+}
+.testimonial-content {
+    background: var(--white); padding: 30px; /* Testimonial box */
+    border-radius: 10px; /* Rounded */
+    box-shadow: 0 5px 15px rgba(0,0,0,.1); /* Soft shadow */
+    position: relative; margin-bottom: 40px; /* Spacing */
+}
+.testimonial-content:after {
+    content: ''; position: absolute; /* Triangle below box */
+    bottom: -20px; left: 50%; transform: translateX(-50%);
+    border: 20px solid transparent;
+    border-top-color: var(--white); /* Triangle color */
+}
+.testimonial-author {
+    display: flex; flex-direction: column; align-items: center; /* Center author */
+}
+.testimonial-author img {
+    width: 60px; height: 60px; /* Avatar size */
+    border-radius: 50%; object-fit: cover; background: #ddd; /* Circle image */
+    margin-bottom: 10px; /* Space below */
+}
+.slider-nav {
+    display: flex; justify-content: center; margin-top: 30px; /* Dots container */
+}
+.slider-dot {
+    width: 12px; height: 12px; /* Dot size */
+    background: #ddd; border-radius: 50%; /* Circle dots */
+    margin: 0 5px; cursor: pointer; /* Clickable */
+}
+.slider-dot.active {
+    background: var(--accent); /* Active dot color */
+}
+
+/* Contact */
+.contact {
+    background: var(--primary); color: var(--white); /* Invert theme */
+}
+.contact-form {
+    max-width: 600px; margin: 50px auto 0; /* Center form */
+}
+.form-group {
+    margin-bottom: 20px; text-align: left; /* Spacing and align */
+}
+.form-control {
+    width: 100%; padding: 12px; /* Input size */
+    border: none; border-radius: 5px; /* Rounded */
+    font-size: 16px; /* Font size */
+}
+textarea.form-control {
+    height: 150px; resize: vertical; /* Textarea size */
+}
+.submit-btn {
+    padding: 12px 30px; /* Button padding */
+    background: var(--secondary); color: var(--dark); /* Colors */
+    border: none; border-radius: 5px; /* Rounded */
+    font-size: 18px; font-weight: 500; /* Button font */
+    cursor: pointer; transition: 0.3s; /* Hover effect */
+}
+.submit-btn:hover {
+    background: #e6a800; /* Darker hover color */
+}
+
+/* Footer */
+footer {
+    background: #333; color: var(--white); /* Dark footer */
+    padding: 40px 20px; text-align: center; /* Padding and alignment */
+}
+.footer-logo, .footer-links {
+    flex: 1; min-width: 200px; margin-bottom: 20px; /* Flexible layout */
+}
+.footer-links h3 {
+    color: var(--secondary); margin-bottom: 15px; /* Heading style */
+}
+.footer-links ul {
+    list-style: none; /* Remove bullets */
+}
+.footer-links a {
+    color: var(--white); text-decoration: none; /* Link style */
+    transition: color 0.3s; /* Smooth hover */
+}
+.footer-links a:hover {
+    color: var(--secondary); /* Highlight on hover */
+}
+.social-links {
+    display: flex; justify-content: center; margin-top: 30px; /* Center icons */
+}
+.social-icon {
+    width: 40px; height: 40px; /* Icon size */
+    display: inline-flex; align-items: center; justify-content: center; /* Center icon */
+    border-radius: 50%; /* Circle icon */
+    background: rgba(255,255,255,0.1); /* Light background */
+    margin: 0 10px; transition: 0.3s; /* Hover effect */
+}
+.social-icon:hover {
+    background: var(--secondary); /* Highlight on hover */
+}
+.copyright {
+    margin-top: 30px; padding-top: 20px; /* Spacing */
+    border-top: 1px solid rgba(255,255,255,0.1); /* Divider */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container, .footer-container {
+        flex-direction: column; text-align: center; /* Stack items */
+    }
+    nav ul {
+        flex-direction: column; align-items: center; /* Stack nav items */
+    }
+    nav li {
+        margin: 10px 0; /* Space between stacked items */
+    }
+    .mobile-menu {
+        display: block; position: absolute; top: 20px; right: 20px; /* Show hamburger menu */
+    }
+    nav {
+        display: none; width: 100%; margin-top: 15px; /* Hide menu initially */
+    }
+    nav.active {
+        display: block; /* Show when active */
+    }
+    .hero h2 {
+        font-size: 32px; /* Smaller heading */
+    }
+    .hero p {
+        font-size: 18px; /* Adjust paragraph */
+    }
+    .section-title {
+        font-size: 30px; /* Smaller title */
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); } /* Start hidden */
+    to { opacity: 1; transform: translateY(0); } /* End visible */
+}
+.fade-in {
+    animation: fadeIn 1s ease forwards; /* Apply fade-in */
+    opacity: 0; transition: opacity 0.6s ease-out; /* Ensure visibility */
+}
+.delay-1 { animation-delay: 0.2s; } /* Delay for fade-in */
+.delay-2 { animation-delay: 0.4s; } /* Delay for fade-in */
+.delay-3 { animation-delay: 0.6s; } /* Delay for fade-in */
+[data-aos] { opacity: 1 !important; } /* Fix for AOS animation visibility */
